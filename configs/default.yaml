@@ -1,0 +1,12 @@
+model_type: "clip"
+model_name: "openai/clip-vit-base-patch32"
+dataset_name: "data/example/annotations.jsonl"
+tasks:
+  - "retrieval"
+seed: 42
+output_dir: "results"
+split_ratios:
+  train: 0.8
+  val: 0.1
+  test: 0.1
+

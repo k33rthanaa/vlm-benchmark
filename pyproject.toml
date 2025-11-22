@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlm_benchmark"
+version = "0.1.0"
+description = "A benchmark suite for Vision-Language Models"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "transformers",
+    "datasets",
+    "pillow",
+    "scikit-learn",
+    "accelerate"
+]
+
+[project.scripts]
+vlm-benchmark = "scripts.run_benchmark:main"
+
